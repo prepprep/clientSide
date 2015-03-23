@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sample Form</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="javascript/inline_validation.js"></script>
+</head>
+<!--
+	Please add comments here to explain how this form is set up and how the inline_validation.js
+	script is used to validate the input in to the different input fields.
+-->
+<body>
+
+  <p> Please fill out the form below, all the fields are required.</p>  
+  
+ <form action="" method="post" onsubmit="return checkForm(this);" target="_self" id="websiteForm">
+
+<ul>
+<li>
+     <ul id="nameGroup">
+     <li class="title">*Name:</li>
+     <li>      
+     <input type="text" id="name" name="last_name" value="" size="30" />
+  	 <div class="error" id="nameError">Required: Please enter your last name.</div>
+ 	 </li>
+     </ul>
+
+    <ul id="emailGroup">
+	<li class="title">*E-Mail:</li>    
+	 <li> <input type="text" id="email" name="email" value="" size="30" />
+  	<div class="error" id="emailError">Required: Please enter your email address.</div>
+  	</li>
+    </ul>
+      
+    <ul id="phoneGroup">           
+	<li class="title">*Phone:</li>    
+	 <li><input type="text" id="phone" name="phone" value="" size="16" />
+  	<div class="error" id="phoneError">Required: Please enter your phone number.</div>
+  	</li>
+    </ul>    
+    
+    <ul id="addressGroup">           
+	<li class="title">*Address:</li>    
+	 <li><input type="text" id="address" name="address" value="" size="16" />
+  	<div class="error" id="addressError">Required: Please enter your address.</div>
+  	</li>
+    </ul> 
+    
+    <ul id="commentGroup">           
+	<li class="title">*Address:</li>    
+        <li><textarea id="comment" name="comment" cols="60" rows="4" ></textarea>
+  	<div class="error" id="commentError">Required: Please enter your comments.</div>
+  	</li>
+    </ul>
+
+    <button type="submit" value="Submit" id="colorBtn">Submit</button>
+ </li>                     
+ </ul>
+ </form>
+
+</body>
+</html>

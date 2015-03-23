@@ -1,0 +1,53 @@
+/* This style sheet is used by form called newForm.html
+*/
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:.9em
+	} 
+	
+#websiteForm{
+	margin:0; width: 650px;
+	}
+#websiteForm ul{
+	margin: 0px; padding: 3px;
+	}
+#websiteForm li {
+	list-style:none;
+	}
+#websiteForm input { 
+	margin-bottom: 13px; 
+	height: 1.5em; 
+	font-size: .9em
+	}
+#websiteForm #colorBtn{
+	width: 75px;
+	background-color:#1c3c5d;
+	color:#FFFFFF; 
+	font-size:.9em; 
+	font-weight: bold; 
+	padding: 5px; 
+	cursor: pointer; 
+	border: 2px solid #336699; 
+	margin-top: 5px; 
+	margin-left: 5px
+	}
+#websiteForm .error {
+	color: #cc0000;
+	display:none; 
+	margin-left: 5px; 
+	background-image:url(../images/dialog-warning.png); 
+	background-repeat:no-repeat; padding-left: 22px;
+	}
+#websiteForm .title{ 
+	font-size: 1em;
+	font-weight: bold; 
+	margin-bottom: 2px;
+	}
+/* Please explain the last two style rule below by placing comments here!
+*/
+.groupError{
+	background-color:#ffcccc
+	}
+#nameError{
+	height: 1em;
+	}
